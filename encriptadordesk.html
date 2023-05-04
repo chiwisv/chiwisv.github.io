@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8"> 
+        <title>encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="encriptador.css">
+    </head>
+
+    <header>
+        <img src="images/Logo.png" class="logo">
+    </header>
+
+    <body>
+        <div class="cuadro-texto">
+           <textarea placeholder="Ingrese texto aquí" id="textoa-traducir"></textarea>
+        </div>
+
+        <div class="botones">
+            <p id="icon"></p>
+            <p>Solo letras minúsculas y sin acentos</p>
+            <button class="encriptador" onclick="botonEncriptar()">Encriptar</button>
+            <button class="desencriptador" onclick="desencriptado()">Desencriptar</button>
+        </div>
+
+        <div class="right-side">
+            <rect></rec>
+        </div>
+
+        <div class="imagen" id="imagen">
+            <img src="images/Muñeco.png">
+        </div>
+
+        <div class="resultado-encriptado" id="resultado-encriptado"></div>
+
+        <div>
+            <button class="copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+
+        <p class="ninguno" id="ninguno">Ningún mensaje fue encontrado</p>
+        <p id="ingresa">Ingresa el texto que desees encriptar o desencriptar.</p>
+    </body>
+</html>
+
+<script>
+
+    //funcion para ejecturse al hacer click en el boton encriptar
+    function botonEncriptar(){
+        visibilityEncriptar();
+        encriptado();
+    }
+    
+    //copiar texto ingresado para encriptar
+    function textoa(){
+        original_string = document.getElementById("textoa-traducir").value;
+        return original_string;
+    }
+
+    //encripta el texto ingresado
+    function encriptado(){
+        var original = textoa();
+        var nueva = encriptar(original);
+        document.getElementById("resultado-encriptado").textContent = nueva;
+        return nueva;
+    }
+
+    //Desencripta el texto ingresado
+    function desencriptado(){
+        var original = textoa();
+        var nueva = desencriptarTexto(original);
+        document.getElementById("resultado-encriptado").textContent = nueva;
+        return nueva;
+    }
+
+    //modifica todas las visibilidades que deben ser cambiadas al modificar encriptar
+    function visibilityEncriptar(){
+        visibility("imagen");
+        visibility("ninguno");
+        visibility("ingresa");
+        visibility("copiar", "visible");
+        visibility("resultado-encriptado", "visible");
+        //encriptado();
+        
+    }
+
+    //para modificar el atributo de visibilidad
+    function visibility(string, string2="hidden") {
+    document.getElementById(string).style.visibility = string2;
+    }
+
+    //Encripta el texto segun las reglas definidas
+    /*La letra "e" es convertida para "enter"
+    La letra "i" es convertida para "imes"
+    La letra "a" es convertida para "ai"
+    La letra "o" es convertida para "ober"
+    La letra "u" es convertida para "ufat"*/
+    function encriptar(string){
+        var new_string = string.replaceAll(/e/g,"enter").replaceAll(/i/g,"imes").replaceAll(/a/g,"ai").replaceAll(/o/g,"ober").replaceAll(/u/g,"ufat");
+        console.log(new_string);
+        return new_string;
+    }
+        
+    //Desencriptar el texto
+    function desencriptarTexto(string){
+        var new_string = string.replaceAll(/enter/g,"e").replaceAll(/imes/g,"i").replaceAll(/ai/g,"a").replaceAll(/ober/g,"o").replaceAll(/ufat/g,"u");
+        console.log(new_string);
+        return new_string;
+    }
+
+    //copiar el texto
+    function copiarTexto(){
+        
+        navigator.clipboard.writeText(document.getElementById("resultado-encriptado").textContent)
+        
+    }
+
+</script>
