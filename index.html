@@ -3,7 +3,8 @@
 <html>
 
     <head>
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>encriptador</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="encriptador.css">
@@ -71,6 +72,7 @@
         var original = textoa();
         var nueva = desencriptarTexto(original);
         document.getElementById("resultado-encriptado").textContent = nueva;
+        visibilityEncriptar();
         return nueva;
     }
 

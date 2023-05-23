@@ -4,24 +4,24 @@ html{
 
 .logo{
     position: absolute;
-    left: 40px;
-    top: 40px;
+    left: 2.166666667%;/*40px;*/
+    top: 4.128813161%;/*40px;*/
 }
 
 .cuadro-texto textarea{
     resize: none;
     position: absolute;
-    width: 680px;
-    height: 288px;
+    width: 36.83333333%;/*680px;*/
+    height: 29.7%;/*288px;*/
     border: 0;
     background: none;
-    left: 240px;
-    top: 168px;
+    left: 13%;/*240px;*/
+    top: 17.34101528%;/*168px;*/
 
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: calc(1em + 0.8578vw);/*32px;*/
     line-height: 150%;
     color : #0A3871;
 }
@@ -30,7 +30,7 @@ html{
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: calc(1em + 0.0028vw);/*32px;*/
     line-height: 150%;
     color : #0A3871;
 }
@@ -40,16 +40,16 @@ html{
 }
 
 .botones p{
-    width: 205px;
-    height: 18px;
+    width: 11.09375;/*205px;*/
+    height: 1.857976119;/*18px;*/
     position: absolute;
-    left: 264px;
-    top: 851px;
+    left: 14.3%;/*264px;*/
+    top: 87.8405%;/*851px;*/
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: calc(0.75em + 0.001vw);/*12px;*/
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
@@ -58,16 +58,16 @@ html{
 
 .encriptador{
     position: absolute;
-    width: 328px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
+    width: 17.75%; /*328px;*/
+    height: 06.9158%;/*67px;*/
+    left: 13%; /*240px;*/
+    top: 91.35%;/*885px;*/
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: calc(1em + 0.02vw);/*16px;*/
+    /*line-height: 19px;*/
     text-align: center;
     color: #FFFFFF;
 
@@ -79,16 +79,16 @@ html{
 
 .desencriptador{
     position: absolute;
-    width: 328px;
-    height: 67px;
-    left: 592px;
-    top: 885px;
+    width: 17.75%; /*328px;*/
+    height: 06.9158%;/*67px;*/
+    left: 32.07%;/*592px;*/
+    top: 91.35%;/*885px;*/
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: calc(1em + 0.02vw);/*16px;*/
+    /*line-height: 19px;*/
     text-align: center;
     color: #0A3871;
 
@@ -103,16 +103,17 @@ html{
     visibility: hidden;
     position: absolute;
     border: #FFFFFF;
-    width: 336px;
-    height: 781px;
-    left: 1032px;
-    top: 72px;
+    width: 17.75%;/*336px;*/
+    height: 80.6155194%;/*781px;*/
+    left: 55.8%;/*1032px;*/
+    top: 7.431864407%;/*72px;*/
+
 
     font-family: 'Inter';
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: calc(1em + 0.43vw);/*24px;*/
     line-height: 150%;
     color: #495057;
 }
@@ -120,18 +121,18 @@ html{
 .copiar{
     visibility: hidden;
     position: absolute;
-    left: 1032px;
-    top: 885px;
+    left: 55.8%;/*1032px;*/
+    top: 91.35%;/*885px;*/
     border: 1px solid #0A3871;
     border-radius: 24px;
-    width: 336px;
-    height: 67px;
+    width: 17.75%; /*336px;*/
+    height: 06.9158%;/*67px;*/
     background: white;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc(1em + 0.02vw);/*16px;*/
     line-height: 19px;
     text-align: center;
     color: #0A3871;
@@ -139,10 +140,10 @@ html{
 
 .right-side rect{
     position: absolute;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+    width: 21.13095238%;/*400px;*/
+    height: 97.44052537%;/*944px;*/
+    left: 54.06976744%;/*1000px;*/
+    top: 4.128813559%;/*40px;*/
     margin: 0;
     border-radius: 32px;
     background: white;
@@ -151,18 +152,20 @@ html{
 
 .imagen img{
     position: absolute;
-    top: 283px;
-    left: 1032px;
+    width: 18.15%;/*336px;*/
+    height: 31.4%;/*304px;*/
+    top: 29.17%;/*283px;*/
+    left: 55.8%;/*1032px;*/
 }
 
 .ninguno{
     position: absolute;
-    top: 619px;
-    left: 1032px;
+    top: 63.9293286%;/*619px;*/
+    left: 55.8%;/*1032px;*/
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: calc(1em + 0.43vw);/*24px;*/
     line-height: 120%;
     color: #343A40;
     text-align: center;
@@ -170,12 +173,12 @@ html{
 
 #ingresa{
     position: absolute;
-    top: 693px;
-    left: 1032px;
+    top: 71.53042403%;/*693px;*/
+    left: 55.8%;/*1032px;*/
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc(1em + 0.003vw);/*16px;*/
     line-height: 150%;
     color: #495057;
     text-align: center;
